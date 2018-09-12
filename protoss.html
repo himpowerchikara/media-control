@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>adun toridas</title>
+	<style >
+/*
+body{ 
+	background-image:url('배경.png'); 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size:auto;}*/
+
+
+#vid{width:0px; transition: all 1s ;position:absolute; left:18.5%; top:10%;
+; z-index:1;}
+
+#back2{z-index:-1; position:absolute; left:0px; top:0%;}
+
+#nexus{width:350px; height:350px; position:absolute; left:38%; top:10%;
+}
+#pilon{width:150px; height:150px; position:absolute; left:30%; top:60%;}
+#pilon2{width:150px; height:150px; position:absolute; left:60%; top:70%;}
+#gateway{width:250px; height:250px; position:absolute; left:15%; top:10%;}
+#stargate{width:250px; height:250px; position:absolute; left:60%; top:40%;}
+#robotics{width:250px; height:250px; position:absolute; left:70%; top:5%;}
+/*#z{width:50px; height:50px; position:absolute; left:370px; top:320px;}*/
+
+#z{width:0px; height:0px;position:absolute; left:10%; top:45%; 
+transition: all 1s}
+#d{width:0px; height:0px; position:absolute; left:17%; top:45%;
+transition: all 1s}
+#h{width:0px; height:0px; position:absolute; left:24%; top:45%;
+transition: all 1s}
+#dk{width:0px; height:0px; position:absolute; left:31%; top:45%;
+transition: all 1s}
+
+#st{width:0px; height:0px; position:absolute; left:69%; top:35%;
+transition: all 1s}
+#rv{width:0px; height:0px; position:absolute; left:76%; top:35%;
+transition: all 1s}
+#ob{width:0px; height:0px; position:absolute; left:83%; top:35%;
+transition: all 1s}
+
+#cs{width:0px; height:0px; position:absolute; left:55%; top:75%;
+transition: all 1s}
+#sc{width:0px; height:0px; position:absolute; left:62%; top:75%;
+transition: all 1s}
+#cr{width:0px; height:0px; position:absolute; left:69%; top:75%;
+transition: all 1s}
+#av{width:0px; height:0px; position:absolute; left:76%; top:75%;
+transition: all 1s}
+#pr{width:0px; height:0px; position:absolute; left:49%; top:55%;
+transition: all 1s}
+#chat{width:300px; height:130px; position:absolute; left:10%; top:60%;}
+#chat2{width:288px; height:56px; position:absolute; left:9%; top:80%;;
+z-index:2;}
+
+</style>
+
+
+</head>
+<body>
+
+<div id= "all">
+
+<video id="vid" src="GG.mp4" type="video/mp4" >
+</video>
+
+	<div id= backGround></div>
+	<img src="넥서스.png" id="nexus">
+	<img src="파일런.png" id="pilon">
+	<img src="파일런.png" id="pilon2">
+	<img src="게이트웨이.png" id="gateway">
+	<img src="로보틱스퍼실리티.png" id="robotics">
+    <img src="스타게이트.png" id="stargate">
+    <img src="질럿.gif" id="z">
+    <img src="드라군.gif" id="d">
+    <img src="하이템플러.gif" id="h">
+    <img src="다크템플러.gif" id="dk">
+    <img src="셔틀.gif" id="st">
+    <img src="리버.gif" id="rv">
+    <img src="옵저버.gif" id="ob">
+    <img src="커세어.gif" id="cs">
+    <img src="스카웃.gif" id="sc">
+    <img src="캐리어.gif" id="cr">
+    <img src="아비터.gif" id="av">
+    <img src="프로브.gif" id="pr">
+    <img src="채팅1.png" id="chat">
+    <img src="채팅2.png" id="chat2">
+    <img src="배경.png" id="back2">
+
+<audio id="zmp3">
+  <source src="z.mp3" type="audio/mpeg">
+</audio>
+<audio id="dmp3">
+  <source src="d.mp3" type="audio/mpeg">
+</audio>
+<audio id="hmp3">
+  <source src="h.mp3" type="audio/mpeg">
+</audio>
+<audio id="dkmp3">
+  <source src="dk.mp3" type="audio/mpeg">
+</audio>
+<audio id="prmp3">
+  <source src="pr.mp3" type="audio/mpeg">
+</audio>
+<audio id="rvmp3">
+  <source src="rv.mp3" type="audio/mpeg">
+</audio>
+<audio id="obmp3">
+  <source src="ob.mp3" type="audio/mpeg">
+</audio>
+<audio id="stmp3">
+  <source src="st.mp3" type="audio/mpeg">
+</audio>
+<audio id="csmp3">
+  <source src="cs.mp3" type="audio/mpeg">
+</audio>
+<audio id="scmp3">
+  <source src="sc.mp3" type="audio/mpeg">
+</audio>
+<audio id="crmp3">
+  <source src="cr.mp3" type="audio/mpeg">
+</audio>
+<audio id="avmp3">
+  <source src="av.mp3" type="audio/mpeg">
+
+</audio>
+<audio id="gtwmp3">
+  <source src="gtw.mp3" type="audio/mpeg">
+
+</audio>
+<audio id="starmp3">
+  <source src="star.mp3" type="audio/mpeg">
+</audio>
+<audio id="nexmp3">
+  <source src="nex.mp3" type="audio/mpeg">
+</audio>
+<audio id="robmp3">
+  <source src="rob.mp3" type="audio/mpeg">
+</audio>
+<audio id="pilmp3">
+  <source src="pil.mp3" type="audio/mpeg">
+</audio>
+<audio id="pil2mp3">
+  <source src="pil2.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+
+<script>
+
+	var toggle = "off";
+
+
+
+pilon.onclick=function(){
+	pilmp3.play();}
+	
+
+pilon2.onclick=function(){
+	pil2mp3.play();}
+
+
+
+nexus.onclick= function(){
+	if(toggle == "off"){
+	pr.style.width="50px";
+	pr.style.height="50px";
+	nexmp3.play();
+	toggle = "on";
+}
+else{ 
+	pr.style.width="0px";
+	pr.style.height="0px";
+	toggle = "off";
+}
+}
+
+	gateway.onclick= function(){
+	if(toggle == "off"){
+	z.style.width="100px";
+	z.style.height="100px";
+	d.style.width="100px";
+	d.style.height="100px";
+	h.style.width="100px";
+	h.style.height="100px";
+	dk.style.width="100px";
+	dk.style.height="100px";
+	gtwmp3.play();
+	toggle = "on";
+}
+else{ 
+	z.style.width="0px";
+	z.style.height="0px";
+	d.style.width="0px";
+	d.style.height="0px";
+	h.style.width="0px";
+	h.style.height="0px";
+	dk.style.width="0px";
+	dk.style.height="0px";
+	toggle = "off";
+}
+}
+
+stargate.onclick= function(){
+	if(toggle == "off"){
+	cs.style.width="100px";
+	cs.style.height="100px";
+	sc.style.width="100px";
+	sc.style.height="100px";
+	cr.style.width="100px";
+	cr.style.height="100px";
+	av.style.width="100px";
+	av.style.height="100px";
+	starmp3.play();
+	toggle = "on";
+}
+else{ 
+	cs.style.width="0px";
+	cs.style.height="0px";
+	sc.style.width="0px";
+	sc.style.height="0px";
+	cr.style.width="0px";
+	cr.style.height="0px";
+	av.style.width="0px";
+	av.style.height="0px";
+	toggle = "off";
+}
+}
+
+robotics.onclick= function(){
+	if(toggle == "off"){
+	st.style.width="100px";
+	st.style.height="100px";
+	rv.style.width="100px";
+	rv.style.height="100px";
+	ob.style.width="100px";
+	ob.style.height="100px";
+	robmp3.play();
+	toggle = "on";
+}
+else{ 
+	st.style.width="0px";
+	st.style.height="0px";
+	rv.style.width="0px";
+	rv.style.height="0px";
+	ob.style.width="0px";
+	ob.style.height="0px";
+	toggle = "off";
+}
+}
+
+z.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+zmp3.pause();
+}
+else{ 
+toggle = "off";
+zmp3.play();
+}
+}
+
+d.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+dmp3.pause();
+}
+else{ 
+toggle = "off";
+dmp3.play();
+}
+}
+
+h.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+hmp3.pause();
+}
+else{ 
+toggle = "off";
+hmp3.play();
+}
+}
+
+dk.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+dkmp3.pause();
+}
+else{ 
+toggle = "off";
+dkmp3.play();
+}
+}
+
+pr.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+prmp3.pause();
+}
+else{ 
+toggle = "off";
+prmp3.play();
+}
+}
+
+rv.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+rvmp3.pause();
+}
+else{ 
+toggle = "off";
+rvmp3.play();
+}
+}
+
+ob.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+obmp3.pause();
+}
+else{ 
+toggle = "off";
+obmp3.play();
+}
+}
+
+st.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+stmp3.pause();
+}
+else{ 
+toggle = "off";
+stmp3.play();
+}
+}
+
+cs.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+csmp3.pause();
+}
+else{ 
+toggle = "off";
+csmp3.play();
+}
+}
+
+sc.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+scmp3.pause();
+}
+else{ 
+toggle = "off";
+scmp3.play();
+}
+}
+
+cr.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+crmp3.pause();
+}
+else{ 
+toggle = "off";
+crmp3.play();
+}
+}
+
+av.onclick=function(){
+	if(toggle == "off"){
+toggle = "on";
+avmp3.pause();
+}
+else{ 
+toggle = "off";
+avmp3.play();
+}
+}
+
+chat2.onclick= function(){
+	if(toggle == "off"){
+		toggle = "on";
+	vid.play();
+vid.currentTime = 0;
+
+	vid.style.width="1000px";
+	vid.style.height="500px";
+
+}
+else if (toggle == "on"){ 
+toggle = "off";
+vid.pause();
+
+vid.style.width="0px";
+vid.style.height="0px";
+
+}
+}
+
+
+
+</script>
+
+</body>
+</html>
